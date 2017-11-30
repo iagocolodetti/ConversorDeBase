@@ -5,7 +5,6 @@ namespace Conversor_de_Base
 {
     public partial class FormPrincipal : Form
     {
-        BaseFuncoes BF;
         bool Travar;
         public FormPrincipal()
         {
@@ -27,7 +26,7 @@ namespace Conversor_de_Base
                 if (Travar == false)
                 {
                     Travar = true;
-                    BF = new BaseFuncoes();
+                    BaseFuncoes BF = new BaseFuncoes();
                     TextBox[] textBox = { textBox2, textBox3, textBox4, textBox5, textBox6, textBox7, textBox8, textBox9, textBox10, textBox11, textBox12, textBox13, textBox14, textBox15, textBox16,
                             textBox17, textBox18, textBox19, textBox20, textBox21, textBox22, textBox23, textBox24, textBox25, textBox26, textBox27, textBox28, textBox29, textBox30, textBox31, textBox32 };
                     int Base = int.Parse(comboBox1.Text);
